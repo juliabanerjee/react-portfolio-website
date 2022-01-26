@@ -1,7 +1,12 @@
 @use "./typography" as *;
+@use "../variables" as *;
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $primary-font;
+  font-family: $text-font;
+}
+
+section{
+  color: $background-color;
 }

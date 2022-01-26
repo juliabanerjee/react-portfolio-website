@@ -1,8 +1,11 @@
 @use "../../assets/styles/variables" as *;
+@use "../../assets/styles/base/reset" as *;
+@use "../../assets/styles/base/typography" as *;
+
 .home-page{
   height: 100vh;
   width: 100vw;
-  color: $background-color;
+  background-color: $background-color;
 
   &__h2{
     color: $text-color;
