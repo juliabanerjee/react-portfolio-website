@@ -1,11 +1,19 @@
 import './App.scss';
-import AboutPage from './components/AboutPage/AboutPage';
+import HomePage from "./containers/HomePage/Homepage";
+
+import {BrowserRouter as Router, Routes, Route} from 
+"react-router-dom";
 
 function App() {
   return (
+    <Router> 
     <div className="App">
-      <AboutPage/>
+      <Routes>
+<Route path ="/" element={HomePage}/>
+      </Routes>
+      
     </div>
+    </Router>
   );
 }
 
