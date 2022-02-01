@@ -1,0 +1,16 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/base/reset" as *;
+@use "../../assets/styles/base/typography" as *;
+.desktop-nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: $background-color;
+
+  &__menu-item{
+    color: $text-color;
+    &:hover{
+      color: $pink-color;
+    }
+  }
+}
