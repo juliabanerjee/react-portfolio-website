@@ -11,7 +11,7 @@ const AboutPage = () =>{
     <section className="about-page">
 <h2 className="about-page__h2">About Me</h2>
 <img src="" alt="me" className="about-page__image"/>
-<p className="about-page__p">I am a junior software developer who...</p>
+<p className="about-page__p">I am a junior full-stack software developer, proficient in JavaScript(ES6) and ReactJS.</p>
     </section>
     </>
   )
