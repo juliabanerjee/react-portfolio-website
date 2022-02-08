@@ -8,13 +8,15 @@ const ContactPage = () => {
   library.add(faLinkedin, faEnvelope, faFileDownload, faGithub);
   return (
     <section className="contact-page">
-      <h2>Contact Details</h2>
+      <h2 className="contact-page__h2">Contact Details</h2>
 
-      <div className="contact__icons">
-        <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faGithub} />
-        <FontAwesomeIcon icon={faFileDownload} />
+      <div className="contact-page__container">
+        <div className="contact-page__icons">
+        <FontAwesomeIcon icon={faEnvelope} className="contact-page__icons"size="6x" />
+        <FontAwesomeIcon icon={faLinkedin} className="contact-page__icons" size="6x"/>
+        <FontAwesomeIcon icon={faGithub} className="contact-page__icons" size="6x"/>
+        <FontAwesomeIcon icon={faFileDownload} className="contact-page__icons" size="6x"/>
+        </div>
       </div>
     </section>
   );
