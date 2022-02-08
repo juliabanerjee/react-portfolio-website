@@ -1,0 +1,15 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/base/reset" as *;
+@use "../../assets/styles/base/typography" as *;
+
+.burger-menu{
+  display: flex;
+  justify-content: flex-end;
+  background-color: $background-color;
+  &__icon{
+    color: $text-color;
+    &:hover{
+      color: $highlight-color;
+    }
+  }
+}
