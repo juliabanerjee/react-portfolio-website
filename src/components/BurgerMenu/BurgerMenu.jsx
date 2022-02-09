@@ -1,15 +1,31 @@
-// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./BurgerMenu.scss";
-const BurgerMenu = () =>{
+import { useState } from "react";
 
-return(
-<div className="burger-menu">
+import NavLinks from "../NavLinks/NavLinks";
 
-<FontAwesomeIcon icon={faBars} className="burger-menu__icon"/>
+const BurgerMenu = () => {
+  
+  const [showNav, setShowNav] = useState(false);
 
-</div>)
+  const toggleNav = () => {
+    setShowNav(!showNav)
+  };
 
+
+
+
+  return (
+    <div className="burger-menu">
+      <FontAwesomeIcon
+        icon={faBars}
+        className="burger-menu__icon"
+        onClick={toggleNav}
+        
+      />
+    {showNav &&  <NavLinks/> }
+    </div>
+  );
 };
 export default BurgerMenu;
