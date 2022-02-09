@@ -12,10 +12,36 @@ const ContactPage = () => {
 
       <div className="contact-page__container">
         <div className="contact-page__icons">
-        <FontAwesomeIcon icon={faEnvelope} className="contact-page__icons"size="6x" />
-        <FontAwesomeIcon icon={faLinkedin} className="contact-page__icons" size="6x"/>
-        <FontAwesomeIcon icon={faGithub} className="contact-page__icons" size="6x"/>
-        <FontAwesomeIcon icon={faFileDownload} className="contact-page__icons" size="6x"/>
+          <a id="email-button" href=" mailto:juliabanerjee27@gmail.com">
+            {" "}
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="contact-page__icons"
+              size="6x"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/julia-banerjee-0a40511b0/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="contact-page__icons"
+              size="6x"
+            />{" "}
+          </a>
+
+          <a href="https://github.com/juliabanerjee">
+            {" "}
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="contact-page__icons"
+              size="6x"
+            />{" "}
+          </a>
+
+          <FontAwesomeIcon
+            icon={faFileDownload}
+            className="contact-page__icons"
+            size="6x"
+          />
         </div>
       </div>
     </section>

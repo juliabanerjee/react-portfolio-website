@@ -2,15 +2,23 @@
 @use "../../assets/styles/base/reset" as *;
 @use "../../assets/styles/base/typography" as *;
 .desktop-nav{
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  background-color: $background-color;
-
-  &__menu-item{
-    color: $text-color;
-    &:hover{
-      color: $pink-color;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .desktop-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: $background-color;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+  
+    &__menu-item{
+      color: $text-color;
+      &:hover{
+        color: $pink-color;
+      }
     }
   }
 }

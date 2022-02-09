@@ -2,19 +2,46 @@
 @use "../../assets/styles/base/reset" as *;
 @use "../../assets/styles/base/typography" as *;
 
-.about-page{
+.about-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-color: $background-color;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
-  &__p{
-    color: $text-color;
-    text-align: center;
+  .about-page__text-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-page__p {
+      color: $text-color;
+      text-align: center;
+      .about-page__text-highlight{
+        color: $highlight-color;
+      .about-page__link{
+        color: $highlight-color;
+        text-decoration: none;
+        &:hover{
+          cursor: grab;
+          text-decoration: underline;
+        }
+      }
+    }
+    }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .about-page {
+    .about-page__text-container {
+      display: grid;
+      grid-template-columns: 30rem 30rem 30rem;
+      grid-gap: 3rem;
+      .about-page__p {
+        text-align: left;
+      }
+
+    }
+  }
 }
