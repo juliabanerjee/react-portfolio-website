@@ -10,8 +10,10 @@
     color: $text-color;
     &:hover{
       color: $highlight-color;
+      cursor: grab;
     }
   }
+  
 }
 
 @media only screen and (min-width: 768px) {

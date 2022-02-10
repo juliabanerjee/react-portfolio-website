@@ -1,0 +1,24 @@
+@use "../../assets/styles/variables" as *;
+@use "../../assets/styles/base/reset" as *;
+@use "../../assets/styles/base/typography" as *;
+
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  width: 100vw;
+  height: 100vh;
+
+  .nav__menu-item{
+    color: $text-color;
+    text-decoration: none;
+    &:hover{
+      color: $pink-color;
+      text-decoration: underline;
+      cursor: grab;
+    }
+  }
+}
