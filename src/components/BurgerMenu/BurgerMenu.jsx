@@ -18,11 +18,6 @@ const BurgerMenu = () => {
   
   
   
-  // const closeMobileNav = () =>{
-  //   setShowNav(false)
-  // }
-  
-  
 
   return (
     <div className="burger-menu" >

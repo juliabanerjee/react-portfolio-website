@@ -8,6 +8,19 @@
   background-color: $background-color;
   height: 100vh;
   width: 100vw;
+  &__h2{
+    margin-top: 1.5rem;
+  }
+  &__carousel{
+    background-color: $highlight-color;
+    margin-top: 7rem;
+    width: 100vw;
+    height: 50vh;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
