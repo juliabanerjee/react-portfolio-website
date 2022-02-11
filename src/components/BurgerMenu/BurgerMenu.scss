@@ -8,6 +8,7 @@
   background-color: $background-color;
   &__icon{
     color: $text-color;
+    margin: 1rem;
     &:hover{
       color: $highlight-color;
       cursor: grab;

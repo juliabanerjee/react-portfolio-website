@@ -24,6 +24,7 @@ const BurgerMenu = () => {
       {showNav && <NavLinks handleClick={toggleMobileNav}/>}
       
       <FontAwesomeIcon
+        size = "3x"
         icon={faBars}
         className="burger-menu__icon"
         onClick={toggleMobileNav}

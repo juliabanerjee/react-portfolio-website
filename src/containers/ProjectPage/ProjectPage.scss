@@ -20,8 +20,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__arrow{
+      padding: 1rem;
+      color: $background-color;
+      &:hover{
+        cursor: grab;
+        background-color: $pink-color;
+        border: solid $text-color 3px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
+
+  .project-page{
+
+    &__carousel{
+      height: 60vh;
+    }
+  }
 }
