@@ -10,7 +10,7 @@ import {
   faNpm,
   faReact,
   faCss3,
-  faSass,
+  faSass
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,11 +33,11 @@ const ExperiencePage = () => {
       <p className="experience-page__p">
         I have recently completed _nology's 12 week intensive Software Developer
         course. During this course, I learned both front-end and back-end
-        development. The front-end side of the course focused on JavaScript and
-        React. On the back-end side, I studied Java and work on APIs using
-        Spring Boot and Google Cloud Platform. Having thoroughly enjoyed the
-        variation on the topics on this course, I am now seeking a fullstack
-        junior developer position. 
+        development. The front-end side of the course focused on <span className="highlight-text">JavaScript</span> and 
+        <span className="highlight-text"> React</span>. On the back-end side, I studied <span className="highlight-text">Java, APIs,
+        Spring Boot and Google Cloud Platform</span>. Having thoroughly enjoyed the
+        variation on the topics on this course, I am now seeking a <span className="highlight-text">fullstack
+        junior developer position</span>. 
       </p>
       <p>Below is the tech stack that I've been working with:</p>
       </div>
@@ -50,6 +50,8 @@ const ExperiencePage = () => {
         <FontAwesomeIcon icon={faJava} size="6x"/>
         <FontAwesomeIcon icon={faDatabase} size="6x"/>
         <FontAwesomeIcon icon={faGithub} size="6x"/>
+        <FontAwesomeIcon icon={faNpm} size="6x"/>
+
       </div>
     </section>
   );
