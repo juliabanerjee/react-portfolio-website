@@ -2,16 +2,14 @@
 @use "../../assets/styles/base/reset" as *;
 @use "../../assets/styles/base/typography" as *;
 
-.project-page{
+.project-page {
   display: flex;
   flex-direction: column;
   background-color: $background-color;
   height: 100vh;
   width: 100vw;
-  &__h2{
-    margin-top: 1.5rem;
-  }
-  &__carousel{
+ 
+  &__carousel {
     background-color: $highlight-color;
     margin-top: 7rem;
     width: 100vw;
@@ -20,10 +18,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__arrow{
+    &__arrow {
       padding: 1rem;
       color: $background-color;
-      &:hover{
+      &:hover {
         cursor: grab;
         background-color: $pink-color;
         border: solid $text-color 3px;
@@ -33,10 +31,8 @@
 }
 
 @media screen and (min-width: 768px) {
-
-  .project-page{
-
-    &__carousel{
+  .project-page {
+    &__carousel {
       height: 60vh;
     }
   }
